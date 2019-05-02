@@ -46,18 +46,13 @@ const melodieNelsonne = new Contact(
 
 let tabContacts = [];
 
-function addTab(tableau, contact)
+function addTab(contact)
 {
 	tabContacts.push(contact);
 };
 
 addTab(caroleLevisse);
 addTab(melodieNelsonne);
-
-tabContacts.forEach(function(index)
-{
-	console.log(index);
-});
 
 /*
 // Méthode avec if... else
@@ -93,9 +88,9 @@ do
 		break;
 		case "1": 
 		console.log("Test 1");
-		tabContacts.forEach(funtion(contact)
+		tabContacts.forEach(function(index)
 		{
-			console.log(contact);
+			console.log(index);
 		});
 		break;
 		case "2" :
