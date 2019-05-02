@@ -15,7 +15,7 @@ La vidéo ci-dessous permet d’observer le comportement du programme attendu.
 */
 
 // TODO : complétez le programme
-//console.log(prompt("Choisissez une option : "))
+
 console.log("Bienvenue dans le gestionnaire de contacts ! \n1 : Liste des contasts \n2 : Ajouter un nouveau contact \n0 : Quitter");
 
 class Contact 
@@ -32,7 +32,35 @@ class Contact
 	}
 };
 
+const caroleLevisse = new Contact(
+	{
+		nom : "Lévisse",
+		prenom : "Carole",
+	});
 
+const melodieNelsonne = new Contact(
+	{
+		nom : "Nelsonne",
+		prenom : "Mélodie",
+	});
+
+let tabContacts = [];
+
+function addTab(tableau, contact)
+{
+	tabContacts.push(contact);
+};
+
+addTab(caroleLevisse);
+addTab(melodieNelsonne);
+
+tabContacts.forEach(function(index)
+{
+	console.log(index);
+});
+
+/*
+// Méthode avec if... else
 do {
 	input = prompt("Choisissez une option : ");
 
@@ -51,29 +79,30 @@ do {
 	};
 }
 while (input != 0)
+*/
 
 
-/*do
+do
 {
 	input = prompt("Choisissez une option : ");
 
 	switch (input)
 	{
-		case 0 :
-		alert(`"Au revoir !"`);
+		case "0" :
+		console.log("Au revoir !");
 		break;
-		case 1: 
-		alert(`"Test 1"`);
+		case "1": 
+		console.log("Test 1");
+		tabContacts.forEach(funtion(contact)
+		{
+			console.log(contact);
+		});
 		break;
-		case 2 :
-		alert(`"Test 2"`);
+		case "2" :
+		console.log("Test 2");
 		break;
 		default:
-		alert("Veuillez saisir 0, 1 ou 2");
+		console.log("Veuillez saisir 0, 1 ou 2");
+		break;
 	}
 } while (input != 0)
-
-if(input == 0)
-{
-	break;
-}*/
