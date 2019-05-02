@@ -87,11 +87,10 @@ do
 		console.log("Au revoir !");
 		break;
 		case "1": 
-		console.log("Test 1");
-		tabContacts.forEach(function(index)
+		for (let i = 0; i < tabContacts.length; i++) 
 		{
-			console.log(index);
-		});
+			console.log("Nom : " + tabContacts[i].nom.nom +', Prénom : ' + tabContacts[i].nom.prenom);
+		};
 		break;
 		case "2" :
 		console.log("Test 2");
